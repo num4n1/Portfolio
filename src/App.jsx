@@ -10,11 +10,6 @@ function App() {
         <Header/>
         <Profile/>
         <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
         <Footer/>
     </>
   )

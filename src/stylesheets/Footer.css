@@ -1,0 +1,16 @@
+.footer-container{
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #2c5c4f;
+    border: 10px solid black;
+}
+
+.footer-copyright { 
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}

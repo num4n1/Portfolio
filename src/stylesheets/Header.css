@@ -1,5 +1,6 @@
-navbar navbar-expand-lg navbar-light bg-light {
+.navbar navbar-expand-lg navbar-light bg-light {
     border-bottom: 2px solid black !important;
+    color: aqua;
 }
 .navbar-nav {
     display: flex; /* Enable flexbox on the nav list */

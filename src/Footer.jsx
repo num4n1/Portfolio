@@ -1,8 +1,11 @@
+import "./stylesheets/Footer.css"
 function Footer() {
-    return (
-        <footer>
-            <p>Numan &copy; {new Date().getFullYear()}</p>
-        </footer>
-    )
+  return (
+    <footer className="footer-container">
+      <p className="footer-copyright">
+        Numan &copy; {new Date().getFullYear()}
+      </p>
+    </footer>
+  );
 }
-export default Footer
+export default Footer;

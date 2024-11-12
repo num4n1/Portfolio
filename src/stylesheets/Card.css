@@ -1,3 +1,14 @@
+.card-container {
+    border: 10px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    display: flex; /* Enable Flexbox */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: center; /* Center cards horizontally */
+    gap: 20px; /* Space between cards */
+}
+
 .card {
     border: 1px solid white;
     border-radius: 10px;
@@ -7,7 +18,7 @@
     text-align: center;
     max-width: 250px;
     max-height: 350px;
-    display: inline-block;
+    display: block;
     overflow: hidden;
     align-items: center ;
   }
