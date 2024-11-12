@@ -1,0 +1,21 @@
+navbar navbar-expand-lg navbar-light bg-light {
+    border-bottom: 2px solid black !important;
+}
+.navbar-nav {
+    display: flex; /* Enable flexbox on the nav list */
+    justify-content: center; /* Center horizontally */
+    width: 100%; /* Take full width of the navbar */
+}
+
+.nav-bar-logo {
+    height: 50px; /* Adjust height of the logo */
+    margin-left: 20px; /* Add space between logo and the left edge */
+    margin-right: 10px; /* Optional: space between the logo and nav items */
+}
+
+.nav-link {
+    color: green !important;
+    font-weight: 600;
+    font-size: 20px
+}
+
