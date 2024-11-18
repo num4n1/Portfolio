@@ -3,6 +3,7 @@ import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
 import Card from "./Card.jsx";
 import Profile from "./Profile.jsx";
+import Tech from "./Tech.jsx"
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       </style>
       <Header />
       <Profile />
+      <Tech />
       <Card />
       <Footer />
     </div>

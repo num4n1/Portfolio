@@ -1,0 +1,19 @@
+.tech-container {
+    background-color: burlywood;
+    height: 100%;
+    width: auto;
+    border: 1px solid black;
+}
+
+.tech-container h1 {
+    margin-top: 10px;
+    text-align: center;
+    font-family: fantasy;
+}
+.tech-box {
+    margin: 50px;
+    border: 10px solid black;
+    width: 1000px;
+    height: 200px;
+    border-radius: 30px;
+}

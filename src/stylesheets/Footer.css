@@ -4,11 +4,11 @@
     align-items: center; /* Center vertically */
     height: 100px;
 
-    background-color: #2c5c4f;
+    background-color: burlywood;
 }
 
 .footer-copyright { 
     font-weight: 600;
-    color: white;
+    color: black;
     margin: 0;
 }
