@@ -14,8 +14,9 @@ function Header() {
       <img className="nav-bar-logo" src={Logo}></img>
       <ul className={`navbar-links ${isDropdownVisible ? "active" : ""}`}>
         <li><a href="#profile">Profile</a></li>
+        <li><a href="#techstack">Knowledge</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#companies">Companies</a></li>
+        <li><a href="#companies">Experience</a></li>
         <li><a href="#feedback">Feedback</a></li>
       </ul>
       <button className="navbar-toggle" onClick={toggleNavbar}>

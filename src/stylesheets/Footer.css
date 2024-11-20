@@ -7,8 +7,9 @@
     background-color: burlywood;
 }
 
-.footer-copyright { 
-    font-weight: 600;
+.footer-container h1{ 
+    font-size: 30px;
     color: black;
+    font-family: fantasy;
     margin: 0;
 }

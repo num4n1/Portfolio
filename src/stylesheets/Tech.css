@@ -1,19 +1,35 @@
 .tech-container {
     background-color: burlywood;
-    height: 100%;
-    width: auto;
+    height: 100vh; /* Ensure it spans the available height */
+    width: auto; /* Take full width of the container */
     border: 1px solid black;
-}
-
-.tech-container h1 {
-    margin-top: 10px;
+    padding-top: 50px;
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stack title and boxes vertically */
+    align-items: center; /* Center content horizontally */
+  }
+  
+  .tech-container h1 {
+    font-size: 100px;
     text-align: center;
     font-family: fantasy;
-}
-.tech-box {
-    margin: 50px;
+  }
+  
+  .tech-box {
+    margin: 20px 0; /* Vertical spacing between boxes */
     border: 10px solid black;
-    width: 1000px;
-    height: 200px;
+    width: 1000px; /* Adjust box width */
+    height: 200px; /* Adjust box height */
+    background-color: #2c5c4f;
     border-radius: 30px;
-}
+    display: flex; /* Center content inside each box */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+  }
+  
+  .tech-box-group {
+    display: flex; /* Flexbox for group alignment */
+    flex-direction: column; /* Stack boxes in a column */
+    align-items: center; /* Center boxes horizontally */
+    gap: 20px; /* Space between boxes */
+  }

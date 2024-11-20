@@ -1,9 +1,10 @@
 import "./stylesheets/index.css";
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
-import Card from "./Card.jsx";
+import Project from "./Project.jsx";
 import Profile from "./Profile.jsx";
-import Tech from "./Tech.jsx"
+import Tech from "./Tech.jsx";
+import Sidebar from "./Sidebar.jsx"; // Correct casing
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -16,10 +17,12 @@ function App() {
           }
         `}
       </style>
+      <Sidebar />
       <Header />
+      {/* Portfolio starts from here */}
       <Profile />
       <Tech />
-      <Card />
+      <Project />
       <Footer />
     </div>
   );

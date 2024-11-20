@@ -1,0 +1,67 @@
+/* Main sidebar container */
+.sidebar {
+    position: fixed;
+    top: 80%; /* Center vertically */
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column; /* Stack icons vertically */
+    align-items: center;
+    gap: 20px; /* Space between icons */
+    padding: 10px;
+    width: 60px; /* Sidebar width */
+    z-index: 1000;
+    overflow: hidden; /* Ensures no overflow outside of the container */
+  }
+  
+  /* Style for the icons */
+  .sidebar-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    fill: var(--icon-color, black); /* Default icon color */
+    transition: transform 0.2s ease, fill 0.3s ease;
+  }
+  
+  /* Add a wrapper to prevent overflow while hovering */
+  .sidebar a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures the icon doesn't spill out */
+    transition: background-color 0.3s ease; /* Optional for hover feedback */
+  }
+  
+  /* Apply hover effects */
+  .sidebar-icon:hover {
+    transform: scale(1.1); /* Adjust scale to avoid excess size */
+  }
+  
+  /* Specific rule to keep GitHub icon black on hover */
+  a[href*="mail"] .sidebar-icon:hover {
+    fill: rgb(132, 0, 0);
+    transform: scale(1.1); /* GitHub icon zooms, but stays black */
+  }
+
+  /* Specific rule to keep GitHub icon black on hover */
+  a[href*="github"] .sidebar-icon:hover {
+    fill: black;
+    transform: scale(1.1); /* GitHub icon zooms, but stays black */
+  }
+
+  /* Specific rule to keep GitHub icon black on hover */
+  a[href*="linkedin"] .sidebar-icon:hover {
+    fill: rgb(30, 50, 230);
+    transform: scale(1.1); /* GitHub icon zooms, but stays black */
+  }
+  
+  /* Optional: Line separator between items */
+  .line-separator {
+    width: 2px;
+    height: 50px; /* Adjust line height as needed */
+    background-color: #000; /* Line color */
+  }
+  
+  

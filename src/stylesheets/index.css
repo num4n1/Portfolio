@@ -2,6 +2,7 @@
 html, body {
     overflow-y: scroll; /* Allow vertical scrolling */
     scrollbar-width: none; /* Hide scrollbar for Firefox */
+    scroll-behavior: smooth;
   }
   
   body::-webkit-scrollbar {
