@@ -41,7 +41,7 @@
   
   /* Specific rule to keep GitHub icon black on hover */
   a[href*="mail"] .sidebar-icon:hover {
-    fill: rgb(132, 0, 0);
+    fill: #ea4335;
     transform: scale(1.1); /* GitHub icon zooms, but stays black */
   }
 

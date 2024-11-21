@@ -8,6 +8,12 @@
   color: #ffffff; /* Optional: White text for contrast */
 }
 
+.btn-container {
+  display: flex;
+  justify-content: center; /* Centers the button horizontally */
+  align-items: center; /* Aligns vertically if necessary */
+  width: 100%; /* Ensures the container spans the full card width */
+}
 
 .project-page h1 {
   font-family: fantasy;
@@ -71,4 +77,13 @@
   line-height: 1.5;
   margin: 0;
   text-align: left;
+}
+
+.card-body h3 {
+  font-family: fantasy;
+  text-align: center;
+}
+
+.card-img-top {
+  padding: 0 !important;
 }
