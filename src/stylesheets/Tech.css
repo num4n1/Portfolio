@@ -25,6 +25,7 @@
     display: flex; /* Center content inside each box */
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
+    gap: 20px;
   }
   
   .tech-box-group {

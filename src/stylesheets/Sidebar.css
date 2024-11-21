@@ -1,45 +1,45 @@
 /* Main sidebar container */
 .sidebar {
-    position: fixed;
-    top: 80%; /* Center vertically */
-    left: 0;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column; /* Stack icons vertically */
-    align-items: center;
-    gap: 20px; /* Space between icons */
-    padding: 10px;
-    width: 60px; /* Sidebar width */
-    z-index: 1000;
-    overflow: hidden; /* Ensures no overflow outside of the container */
+  position: fixed;
+  top: 80%; /* Center vertically */
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column; /* Stack icons vertically */
+  align-items: center;
+  gap: 20px; /* Space between icons */
+  padding: 10px;
+  width: 60px; /* Sidebar width */
+  z-index: 1000;
+  overflow: hidden; /* Ensures no overflow outside of the container */
 }
-  
+
 /* Style for the icons */
 .sidebar-icon {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    fill: var(--icon-color, black); /* Default icon color */
-    transition: transform 0.2s ease, fill 0.3s ease;
-    object-fit: contain; /* Ensures <img> icons scale properly */
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  fill: var(--icon-color, black); /* Default icon color */
+  transition: transform 0.2s ease, fill 0.3s ease;
+  object-fit: contain; /* Ensures <img> icons scale properly */
 }
-  
+
 /* Add a wrapper to prevent overflow while hovering */
 .sidebar a {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Ensures the icon doesn't spill out */
-    transition: background-color 0.3s ease; /* Optional for hover feedback */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures the icon doesn't spill out */
+  transition: background-color 0.3s ease; /* Optional for hover feedback */
 }
-  
+
 /* Apply hover effects */
 .sidebar-icon:hover {
-    transform: scale(1.1); /* Adjust scale to avoid excess size */
+  transform: scale(1.1); /* Adjust scale to avoid excess size */
 }
-  
+
 /* Specific rule for email icon (Google logo) */
 /* Specific rule for email icon (Google logo) */
 a[href*="mail"] .sidebar-icon {
@@ -50,28 +50,27 @@ a[href*="mail"] .sidebar-icon {
 
 /* Specific rule for email icon hover (red Gmail color) */
 a[href*="mail"] .sidebar-icon:hover {
-  filter: brightness(0) saturate(100%) invert(36%) sepia(79%) saturate(5543%) hue-rotate(-1deg) brightness(94%) contrast(92%);
+  filter: brightness(0) saturate(100%) invert(36%) sepia(79%) saturate(5543%)
+    hue-rotate(-1deg) brightness(94%) contrast(92%);
 
   transform: scale(1.1); /* Add the zoom effect */
 }
 
-
-
 /* Specific rule to keep GitHub icon black on hover */
 a[href*="github"] .sidebar-icon:hover {
-    fill: white;
-    transform: scale(1.1);
+  fill: white;
+  transform: scale(1.1);
 }
 
 /* Specific rule to keep LinkedIn icon blue on hover */
 a[href*="linkedin"] .sidebar-icon:hover {
-    fill: #0077B5; /* LinkedIn blue */
-    transform: scale(1.1);
+  fill: #0077b5; /* LinkedIn blue */
+  transform: scale(1.1);
 }
-  
+
 /* Optional: Line separator between items */
 .line-separator {
-    width: 2px;
-    height: 50px; /* Adjust line height as needed */
-    background-color: #000; /* Line color */
+  width: 2px;
+  height: 50px; /* Adjust line height as needed */
+  background-color: #000; /* Line color */
 }
