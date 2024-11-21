@@ -1,6 +1,7 @@
 import profilePicture from "./assets/profilePicture.jpg";
 import TechStack from "./TechStack.jsx";
 import "./stylesheets/Profile.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 function Profile() {
   return (
     <>

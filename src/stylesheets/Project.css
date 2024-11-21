@@ -1,7 +1,13 @@
 .project-page {
-  background-color: #2c5c4f;
+  background-color: #2c5c4f !important;
   padding-top: 50px;
 }
+
+.custom-bg-green {
+  background-color: #2c5c4f; /* Your desired color */
+  color: #ffffff; /* Optional: White text for contrast */
+}
+
 
 .project-page h1 {
   font-family: fantasy;
