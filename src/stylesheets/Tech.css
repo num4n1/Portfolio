@@ -7,15 +7,16 @@
   flex-direction: column; /* Stack title and boxes vertically */
   align-items: center; /* Center content horizontally */
   border: none;
+  padding-top: 50px;
 }
 
-.skills-container {
+.heading-container {
   position: relative; /* Allows the overlay text to be positioned relative to the outline */
   text-align: center; /* Centers the text horizontally */
-  margin: 50px 0; /* Adjust spacing around the container */
+
 }
 
-.skills-outline {
+.heading-outline {
   font-size: 200px; /* Large font size for the outline text */
   color: transparent; /* Light grey color */
   text-transform: uppercase; /* Makes the text uppercase */
@@ -26,7 +27,7 @@
   opacity: 10%;
 }
 
-.skills-overlay {
+.heading-overlay {
   position: absolute; /* Overlay text on top of the outline */
   top: 50%; /* Center the text vertically */
   left: 50%; /* Center the text horizontally */

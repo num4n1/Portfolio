@@ -1,6 +1,6 @@
 .project-page {
   background-color: #10221d !important; /* Ensure consistent background color */
-  padding: 0; /* Ensure no extra padding inside the project page */
+  /* padding-top: 50px; */
 }
 
 .btn-container {
@@ -13,7 +13,6 @@
 .skills-container {
   position: relative; /* For text overlay positioning */
   text-align: center; /* Centers the text */
-  margin: 30px 0; /* Reduce spacing between elements */
 }
 
 .skills-outline {
