@@ -5,7 +5,10 @@ function Tech() {
     <>
       <section id="techstack">
         <div className="tech-container">
-          <h1>Tech Stack</h1>
+          <div class="skills-container">
+            <h1 class="skills-outline">SKILLS</h1>
+            <h2 class="skills-overlay">MY SKILLS</h2>
+          </div>
           <div className="tech-box-group">
             <div className="tech-box">
               <img

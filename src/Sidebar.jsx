@@ -67,7 +67,7 @@ function Sidebar() {
 
       <a href="mailto:business.numan@gmail.com" aria-label="Email">
         <img
-          src="https://devicon-website.vercel.app/api/google/plain.svg?color=%23000000"
+          src="https://devicon-website.vercel.app/api/google/plain.svg?"
           alt="Email"
           className="sidebar-icon"
         />

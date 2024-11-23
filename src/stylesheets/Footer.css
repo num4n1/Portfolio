@@ -1,15 +1,15 @@
-.footer-container{
-    display: flex; /* Enable Flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100px;
+.footer-container {
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100px;
 
-    background-color: burlywood;
+  background-color: #316758;
 }
 
-.footer-container h1{ 
-    font-size: 30px;
-    color: black;
-    font-family: fantasy;
-    margin: 0;
+.footer-container h1 {
+  font-size: 30px;
+  color: #dceee9;
+  font-family: fantasy;
+  margin: 0;
 }

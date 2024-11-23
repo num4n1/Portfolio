@@ -17,8 +17,17 @@ function Profile() {
             </div>
 
             <h2 className="profile-title">Mohamed Numan</h2>
-            <p>Hello! I am a Full Stack Developer.</p>
-            <TechStack />
+            <h3 className="my-location">
+              {" "}
+              Currently based in &#128204; Toronto, Ontario
+            </h3>
+            {/* <p>
+              Hello! I am a Full Stack Developer with a passion for creating
+              dynamic and user-friendly web applications. With expertise in both
+              front-end and back-end technologies, I specialize in building
+              scalable, efficient, and innovative solutions. Let's collaborate
+              to bring ideas to life and solve real-world problems through code!
+            </p> */}
           </div>
         </div>
       </section>
