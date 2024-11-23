@@ -4,7 +4,6 @@ import "./stylesheets/Profile.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 function Profile() {
   return (
-    <>
       <section id="profile">
         <div className="main-card">
           <div className="profile-card">
@@ -19,7 +18,7 @@ function Profile() {
             <h2 className="profile-title">Mohamed Numan</h2>
             <h3 className="my-location">
               {" "}
-              Currently based in &#128204; Toronto, Ontario
+              Toronto, Ontario &#128204;
             </h3>
             {/* <p>
               Hello! I am a Full Stack Developer with a passion for creating
@@ -31,7 +30,6 @@ function Profile() {
           </div>
         </div>
       </section>
-    </>
   );
 }
 export default Profile;

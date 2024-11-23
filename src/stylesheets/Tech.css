@@ -1,7 +1,7 @@
 .tech-container {
   background-color: #10221d;
   width: auto; /* Take full width of the container */
-
+  height: auto;
   border: 1px solid black;
   display: flex; /* Enable Flexbox */
   flex-direction: column; /* Stack title and boxes vertically */

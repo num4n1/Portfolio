@@ -1,134 +1,146 @@
 .project-page {
-  background-color: #10221d !important;
-}
-
-.custom-bg-green {
-  background-color: #10221d; /* Your desired color */
-  color: #ffffff; /* Optional: White text for contrast */
+  background-color: #10221d !important; /* Ensure consistent background color */
+  padding: 0; /* Ensure no extra padding inside the project page */
 }
 
 .btn-container {
   display: flex;
-  justify-content: center; /* Centers the button horizontally */
-  align-items: center; /* Aligns vertically if necessary */
-  width: 100%; /* Ensures the container spans the full card width */
+  justify-content: center; /* Center the button horizontally */
+  align-items: center; /* Align vertically if needed */
+  width: 100%; /* Spans the full card width */
 }
 
 .skills-container {
-  position: relative; /* Allows the overlay text to be positioned relative to the outline */
-  text-align: center; /* Centers the text horizontally */
-  margin: 50px 0; /* Adjust spacing around the container */
+  position: relative; /* For text overlay positioning */
+  text-align: center; /* Centers the text */
+  margin: 30px 0; /* Reduce spacing between elements */
 }
 
 .skills-outline {
-  font-size: 200px; /* Large font size for the outline text */
-  color: transparent; /* Light grey color */
-  text-transform: uppercase; /* Makes the text uppercase */
-  letter-spacing: 5px; /* Adds spacing between letters */
-  font-weight: bold; /* Makes the text bold */
-  -webkit-text-stroke: 2px #dceee9; /* Applies the outline */
+  font-size: 200px; /* Large text for outline */
+  color: transparent; /* Transparent fill */
+  text-transform: uppercase;
+  letter-spacing: 5px; /* Space between letters */
+  font-weight: bold;
+  -webkit-text-stroke: 2px #dceee9; /* Outline color */
   font-family: fantasy;
-  opacity: 10%;
+  opacity: 0.1; /* Reduce transparency */
 }
 
 .skills-overlay {
-  position: absolute; /* Overlay text on top of the outline */
-  top: 50%; /* Center the text vertically */
-  left: 50%; /* Center the text horizontally */
-  transform: translate(-50%, -50%); /* Adjusts to be perfectly centered */
-  font-size: 75px; /* Smaller font size for the overlay text */
-  color: #52ac94; /* Gold color for the overlay text */
-  font-weight: bold; /* Makes the text bold */
-  text-transform: uppercase; /* Makes the text uppercase */
-  letter-spacing: 2px; /* Adds spacing between letters */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 75px;
+  color: #52ac94;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   font-family: fantasy;
-  text-wrap: nowrap;
+  white-space: nowrap; /* Prevents wrapping */
 }
 
 .project-container {
-  padding: 20px;
+  padding: 0; /* Remove extra padding */
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  height: 100vh;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  justify-content: center; /* Center-align projects */
+  gap: 20px; /* Space between project cards */
+  margin: 0 auto; /* Center the container */
 }
 
 .project {
-  display: flex; /* Horizontal layout for left and right sections */
+  display: flex; /* Horizontal layout */
   flex-direction: row;
-  border: 0px solid #ddd;
+  align-items: stretch; /* Make both sides equal height */
   border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
   padding: 20px;
-  max-width: 400px;
+  max-width: 400px; /* Prevent overly large cards */
   background-color: #f9f9f9;
   gap: 20px;
-  align-items: stretch; /* Ensure both sections are the same height */
 }
 
 .project-left {
   display: flex;
-  flex-direction: column; /* Stack image and title */
-  align-items: center; /* Center horizontally */
+  flex-direction: column;
+  align-items: center; /* Centers image and title */
   gap: 10px;
-  flex-shrink: 0;
+  flex-shrink: 0; /* Prevent shrinking */
 }
 
 .project .project-image {
   width: 120px;
   height: 120px;
-  border-radius: 50%;
+  border-radius: 50%; /* Circular image */
 }
 
 .project .project-title {
   font-size: 18px;
   color: black;
   text-align: center;
-  margin: 0;
 }
 
 .project-right {
-  flex: 1; /* Full width for the paragraph */
+  flex: 1; /* Expand to take remaining width */
   display: flex;
-  align-items: flex-start; /* Align paragraph to top */
+  align-items: flex-start; /* Align text to the top */
 }
 
 .project .project-description {
   font-size: 14px;
   color: #555;
-  line-height: 1.5;
-  margin: 0;
+  line-height: 1.5; /* Better readability */
   text-align: left;
+}
+
+/* Styling for Cards */
+.card-body {
+  background-color: #20453b; /* Card body background */
+  padding: 15px; /* Ensure consistent spacing inside card */
 }
 
 .card-body h3 {
   font-family: fantasy;
   text-align: center;
-}
-
-.card-body {
-  background-color: #20453b;
+  color: white; /* Title color */
 }
 
 .card-body p {
-  color: white;
-}
-
-.card-body h3 {
-  color: white;
+  color: white; /* Paragraph text color */
 }
 
 .card-body button {
   color: white;
   border: 1px solid white;
+  background-color: transparent;
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
 }
 
 .card-body button:hover {
-  background-color: #10221d;
+  background-color: #10221d; /* Button hover background */
   border: 1px solid white;
 }
 
 .card {
-  border: 5px solid white !important;
+  border: 5px solid white !important; /* Consistent card border */
+  border-radius: 10px; /* Rounded edges for better appearance */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .skills-outline {
+    font-size: 150px; /* Reduce size for smaller screens */
+  }
+
+  .skills-overlay {
+    font-size: 50px; /* Reduce overlay size for smaller screens */
+  }
+
+  .project {
+    flex-direction: column; /* Stack content vertically on small screens */
+    max-width: 100%; /* Ensure it fits the screen */
+  }
 }

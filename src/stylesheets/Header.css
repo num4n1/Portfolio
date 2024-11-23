@@ -1,4 +1,7 @@
 /* Navbar container */
+.navbar {
+  transition: transform 0.3s ease-in-out;
+}
 .custom-navbar {
     position: fixed;
     top: 0;

@@ -1,6 +1,11 @@
 /* Hide scrollbars but allow scrolling */
 html, body {
+  height: auto;
+  margin: 0;
+  padding: 0;
+
     overflow-y: scroll; /* Allow vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal overflow */
     scrollbar-width: none; /* Hide scrollbar for Firefox */
     scroll-behavior: smooth;
   }
@@ -8,4 +13,7 @@ html, body {
   body::-webkit-scrollbar {
     display: none; /* Hide scrollbar for Chrome, Safari, and Edge */
   }
-  
+
+  section {
+    height: auto;
+  }

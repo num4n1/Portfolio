@@ -1,5 +1,5 @@
 import "./stylesheets/index.css";
-import Header from "./Header.jsx";
+import Navbar from "./Header.jsx";
 import Footer from "./Footer.jsx";
 import Project from "./Project.jsx";
 import Profile from "./Profile.jsx";
@@ -18,7 +18,7 @@ function App() {
         `}
       </style>
       <Sidebar />
-      <Header />
+      <Navbar />
       {/* Portfolio starts from here */}
       <Profile />
       <Tech />

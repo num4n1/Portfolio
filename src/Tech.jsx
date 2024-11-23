@@ -2,7 +2,6 @@ import "./stylesheets/Tech.css";
 
 function Tech() {
   return (
-    <>
       <section id="techstack">
         <div className="tech-container">
           <div class="skills-container">
@@ -124,7 +123,6 @@ function Tech() {
           </div>
         </div>
       </section>
-    </>
   );
 }
 

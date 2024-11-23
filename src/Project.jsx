@@ -9,12 +9,11 @@ function Project() {
   return (
     <section id="projects">
       <div className="project-page">
-        <div class="skills-container">
-          <h1 class="skills-outline">PROJECTS</h1>
-          <h2 class="skills-overlay">MY PROJECTS</h2>
-        </div>
-
         <div class="album py-5 custom-bg-green">
+          <div class="skills-container">
+            <h1 class="skills-outline">PROJECTS</h1>
+            <h2 class="skills-overlay">MY PROJECTS</h2>
+          </div>
           <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
               <div class="col">
