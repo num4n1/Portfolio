@@ -5,7 +5,19 @@ import JobpAIr from "./assets/JobpAIr.png";
 import CookEasy from "./assets/CookEasy.png";
 import SweSeek from "./assets/SweSeek.png";
 import "./stylesheets/Project.css";
+import React, { useState, useEffect } from "react";
 function Project() {
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleExperienceClick = (e) => {
+    e.preventDefault(); // Prevent default link behavior
+    setShowPopup(true); // Show the popup
+  };
+
+  const closePopup = () => {
+    setShowPopup(false); // Close the popup
+  };
+
   return (
     <section id="projects">
       <div className="project-page">
@@ -26,9 +38,10 @@ function Project() {
                   <div class="card-body">
                     <h3>MoneyWise</h3>
                     <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
+                      A web app for expense tracking, budget management, and
+                      categorize transactions with AI, providing secure access
+                      and real-time financial insights for better money
+                      management.
                     </p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div className="btn-container">
@@ -36,6 +49,7 @@ function Project() {
                           <button
                             type="button"
                             class="btn btn-sm btn-outline-secondary"
+                            onClick={handleExperienceClick}
                           >
                             View on GitHub
                           </button>
@@ -51,9 +65,10 @@ function Project() {
                   <div class="card-body">
                     <h3>I-Sole</h3>
                     <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
+                      Developed a non-invasive diabetic insole using TensorFlow,
+                      integrated with React-Native and Flask apps, deployed on
+                      AWS, delivering real-time health insights and improving
+                      emergency response times.
                     </p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div className="btn-container">
@@ -80,19 +95,27 @@ function Project() {
                   <div class="card-body">
                     <h3>ResearchGram</h3>
                     <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
+                      An AI-powered platform that recommends research papers
+                      using user-provided inputs like videos, images, audio, or
+                      documents. It generates summaries, recommendations, and
+                      facilitates efficient exploration
                     </p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div className="btn-container">
                         <div class="btn-group">
-                          <button
-                            type="button"
-                            class="btn btn-sm btn-outline-secondary"
+                          <a
+                            href="https://github.com/num4n1/Hip-Hack-Array-hackathon"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ textDecoration: "none" }}
                           >
-                            View on GitHub
-                          </button>
+                            <button
+                              type="button"
+                              class="btn btn-sm btn-outline-secondary"
+                            >
+                              View on GitHub
+                            </button>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -105,19 +128,26 @@ function Project() {
                   <div class="card-body">
                     <h3>Job pAIr</h3>
                     <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
+                      A platform that simplifies job-seeking by offering
+                      <br></br>AI-driven personalized job recommendations,
+                      application tracking, and tools for career optimization.
                     </p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div className="btn-container">
                         <div class="btn-group">
-                          <button
-                            type="button"
-                            class="btn btn-sm btn-outline-secondary"
+                          <a
+                            href="https://github.com/num4n1/Job-pair"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ textDecoration: "none" }}
                           >
-                            View on GitHub
-                          </button>
+                            <button
+                              type="button"
+                              class="btn btn-sm btn-outline-secondary"
+                            >
+                              View on GitHub
+                            </button>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -131,9 +161,9 @@ function Project() {
                   <div class="card-body">
                     <h3>CookEasy</h3>
                     <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
+                      An AI Powered app that helps users discover dishes they
+                      can cook based on available ingredients and provides
+                      precise spice and vegetable measurements for cooking.
                     </p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div className="btn-container">
@@ -141,6 +171,7 @@ function Project() {
                           <button
                             type="button"
                             class="btn btn-sm btn-outline-secondary"
+                            onClick={handleExperienceClick}
                           >
                             View on GitHub
                           </button>
@@ -156,19 +187,26 @@ function Project() {
                   <div class="card-body">
                     <h3>SWESeek</h3>
                     <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
+                      A platform that simplifies job searching with personalized
+                      recommendations, application tracking, resources, and
+                      progress visualization for seamless efficiency.
                     </p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div className="btn-container">
                         <div class="btn-group">
-                          <button
-                            type="button"
-                            class="btn btn-sm btn-outline-secondary"
+                          <a
+                            href="https://github.com/num4n1/SWESeek"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ textDecoration: "none" }}
                           >
-                            View on GitHub
-                          </button>
+                            <button
+                              type="button"
+                              class="btn btn-sm btn-outline-secondary"
+                            >
+                              View on GitHub
+                            </button>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -252,6 +290,20 @@ function Project() {
             </div>
           </div>
         </div> */}
+
+        {/* Popup Modal */}
+        {showPopup && (
+          <div className="popup-overlay" onClick={closePopup}>
+            <div className="popup-box" onClick={(e) => e.stopPropagation()}>
+              <h3>🚧Work in Progress🚧</h3>
+              <p>
+                This project is currently under development. Stay tuned for
+                updates!
+              </p>
+              <button onClick={closePopup}>Close</button>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
