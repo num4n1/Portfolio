@@ -13,7 +13,6 @@
 .heading-container {
   position: relative; /* Allows the overlay text to be positioned relative to the outline */
   text-align: center; /* Centers the text horizontally */
-
 }
 
 .heading-outline {

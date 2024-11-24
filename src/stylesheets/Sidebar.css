@@ -1,7 +1,7 @@
 /* Main sidebar container */
 .sidebar {
   position: fixed;
-  top: 75%; /* Center vertically */
+  top: 70%; /* Center vertically */
   left: 0;
   transform: translateY(-50%);
   display: flex;

@@ -33,6 +33,7 @@ function Sidebar() {
 
   return (
     <div className="sidebar">
+      <div className="line-separator"></div>
       <a
         href="https://www.linkedin.com/in/mohamednuman/"
         aria-label="LinkedIn"

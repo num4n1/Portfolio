@@ -1,76 +1,74 @@
 .about-page {
-    background-color: #10221d;
-    height: 100vh;
-    padding-top: 50px;
+  background-color: #10221d;
+  height: 100vh;
+  padding-top: 50px;
 }
 .heading-container {
-    position: relative; /* For text overlay positioning */
-    text-align: center; /* Centers the text */
-    background-color: #10221d;
-  }
-  
-  .heading-outline {
-    font-size: 200px; /* Large text for outline */
-    color: transparent; /* Transparent fill */
-    text-transform: uppercase;
-    letter-spacing: 5px; /* Space between letters */
-    font-weight: bold;
-    -webkit-text-stroke: 2px #dceee9; /* Outline color */
-    font-family: fantasy;
-    opacity: 0.1; /* Reduce transparency */
-  }
-  
-  .heading-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 75px;
-    color: #52ac94;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-family: fantasy;
-    white-space: nowrap; /* Prevents wrapping */
-  }
+  position: relative; /* For text overlay positioning */
+  text-align: center; /* Centers the text */
+}
 
-  .about-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto; /* Center container horizontally */
-    gap: 100px;
-    width: 100%;
-    max-width: 1200px; /* Restrict the width for better layout */
-    min-height: 60vh;
-  }
+.heading-outline {
+  font-size: 200px; /* Large text for outline */
+  color: transparent; /* Transparent fill */
+  text-transform: uppercase;
+  letter-spacing: 5px; /* Space between letters */
+  font-weight: bold;
+  -webkit-text-stroke: 2px #dceee9; /* Outline color */
+  font-family: fantasy;
+  opacity: 0.1; /* Reduce transparency */
+}
 
-  .about-left,
+.heading-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 75px;
+  color: #52ac94;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: fantasy;
+  white-space: nowrap; /* Prevents wrapping */
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; /* Center container horizontally */
+  gap: 100px;
+  width: 100%;
+  max-width: 1200px; /* Restrict the width for better layout */
+  min-height: 60vh;
+}
+
+.about-left,
 .about-right {
   flex: 1; /* Ensures both sections take equal space */
   display: flex;
   align-items: center; /* Centers content vertically within the section */
   justify-content: center; /* Centers content horizontally within the section */
   text-align: center;
-
 }
 
 .about-left .doodle-box img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  .about-right {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .about-right p {
-    font-size: 2rem;
-    line-height: 1.6;
-    color: #c9d1d1;
-    margin: 0 20px;
-    font-family: fantasy;
-  }
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-right {
+  text-align: center;
+  padding: 20px;
+}
+
+.about-right p {
+  font-size: 2rem;
+  line-height: 1.6;
+  color: #c9d1d1;
+  margin: 0 20px;
+  font-family: fantasy;
+}

@@ -10,12 +10,12 @@
   width: 100%; /* Spans the full card width */
 }
 
-.skills-container {
+.header-container {
   position: relative; /* For text overlay positioning */
   text-align: center; /* Centers the text */
 }
 
-.skills-outline {
+.header-outline {
   font-size: 200px; /* Large text for outline */
   color: transparent; /* Transparent fill */
   text-transform: uppercase;
@@ -26,7 +26,7 @@
   opacity: 0.1; /* Reduce transparency */
 }
 
-.skills-overlay {
+.header-overlay {
   position: absolute;
   top: 50%;
   left: 50%;

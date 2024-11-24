@@ -6,11 +6,15 @@ import Profile from "./Profile.jsx";
 import About from "./About.jsx";
 import Tech from "./Tech.jsx";
 import Sidebar from "./Sidebar.jsx"; // Correct casing
+import Menu from "./Menu.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <div style={{ overflowY: 'scroll', scrollbarWidth: 'none' }} className="app-container">
+    <div
+      style={{ overflowY: "scroll", scrollbarWidth: "none" }}
+      className="app-container"
+    >
       <style>
         {`
           .app-container::-webkit-scrollbar {
@@ -20,6 +24,8 @@ function App() {
       </style>
       <Sidebar />
       <Navbar />
+      <Menu />
+
       {/* Portfolio starts from here */}
       <Profile />
       <About />
