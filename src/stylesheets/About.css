@@ -72,3 +72,45 @@
   margin: 0 20px;
   font-family: fantasy;
 }
+
+/* Media Queries for Stacked Layout */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Stack items vertically */
+    gap: 50px; /* Reduce gap for better vertical spacing */
+  }
+
+  .about-left,
+  .about-right {
+    flex: none; /* Remove flex-grow */
+    width: 100%; /* Ensure full width for stacked layout */
+  }
+
+  .about-right p {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .heading-overlay {
+    font-size: 3rem; /* Reduce heading size for very small screens */
+  }
+
+  .heading-outline {
+    font-size: 7rem;
+    -webkit-text-stroke: 1px #dceee9;
+  }
+
+  .about-container {
+    gap: 5px; /* Further reduce spacing */
+  }
+
+  .about-right p {
+    font-size: 1.25rem; /* Adjust text size for narrow screens */
+  }
+  .about-left .doodle-box img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+  }
+}

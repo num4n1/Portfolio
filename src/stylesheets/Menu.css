@@ -105,3 +105,10 @@
 .popup-box button:hover {
   background-color: #419f84;
 }
+
+/* Hiding the menu for small screens */
+@media (max-width: 480px) {
+  .menu-container {
+    display: none; /* Completely hide the menu */
+  }
+}

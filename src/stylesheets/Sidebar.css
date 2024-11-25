@@ -79,3 +79,40 @@ img.sidebar-icon {
   filter: brightness(0) invert(1); /* Ensures non-SVG icons (like PNG or JPG) appear white */
   transition: filter 0.3s ease, transform 0.2s ease; /* Smooth hover transition */
 }
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 50px; /* Slightly smaller sidebar width */
+    gap: 15px; /* Reduce space between icons */
+    padding: 5px; /* Reduce padding */
+  }
+
+  .sidebar a {
+    width: 30px; /* Adjust width for smaller screens */
+    height: 30px; /* Adjust height for smaller screens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent icons from spilling */
+    transition: background-color 0.3s ease; /* Smooth hover feedback */
+  }
+
+  .sidebar-icon {
+    width: 25px; /* Resize icons for smaller screens */
+    height: 25px; /* Maintain aspect ratio */
+    transition: transform 0.2s ease, fill 0.3s ease;
+  }
+
+  /* Specific Google Email icon adjustment */
+  a[href*="mail"] .sidebar-icon {
+    width: 20px; /* Smaller size for the Google logo */
+    height: 20px; /* Maintain aspect ratio */
+  }
+
+  /* Line separator adjustments */
+  .line-separator {
+    width: 1px; /* Slimmer line for smaller screens */
+    height: 30px; /* Shorten the height */
+    background-color: #75bda9;
+  }
+}

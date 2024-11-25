@@ -1,3 +1,6 @@
+#techstack {
+  background-color: #10221d;
+}
 .tech-container {
   background-color: #10221d;
   width: auto; /* Take full width of the container */
@@ -65,4 +68,66 @@
   flex-direction: column; /* Stack boxes in a column */
   align-items: center; /* Center boxes horizontally */
   gap: 20px; /* Space between boxes */
+}
+
+/* Responsive styles for tablets (medium screens) */
+@media (max-width: 768px) {
+  .tech-box {
+    width: 80%; /* Reduce the box width for smaller screens */
+    padding: 15px; /* Reduce padding */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
+    gap: 15px; /* Reduce spacing between items */
+  }
+
+  .heading-outline {
+    font-size: 10rem; /* Reduce heading size */
+    -webkit-text-stroke: 1.5px #dceee9;
+  }
+
+  .heading-overlay {
+    font-size: 4rem; /* Reduce overlay size */
+  }
+
+  .tech-box img {
+    width: 80px; /* Resize images for smaller boxes */
+    height: auto;
+  }
+}
+
+/* Responsive styles for very small screens (phones) */
+@media (max-width: 480px) {
+
+  .heading-overlay {
+    font-size: 3rem; /* Reduce heading size for very small screens */
+  }
+
+  .heading-outline {
+    font-size: 7rem;
+    -webkit-text-stroke: 1px #dceee9;
+  }
+  .tech-box-group {
+    gap: 2px;
+  }
+
+  .tech-box {
+    display: grid; /* Switch to grid layout for smaller screens */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for the first row */
+    gap: 10px; /* Reduce spacing */
+    width: 90%; /* Adjust box width for smaller screens */
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  /* Adjust for 3-and-2 layout */
+  .tech-box img:nth-child(4) {
+    grid-column: 1 / span 1; /* Place 4th item in the first column of second row */
+  }
+
+  .tech-box img:nth-child(5) {
+    grid-column: 2 / span 1; /* Place 5th item in the second column of second row */
+  }
+
+  .tech-box img {
+    width: 70px; /* Resize images for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+  }
 }

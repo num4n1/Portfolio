@@ -10,12 +10,12 @@
   width: 100%; /* Spans the full card width */
 }
 
-.header-container {
+.heading-container {
   position: relative; /* For text overlay positioning */
   text-align: center; /* Centers the text */
 }
 
-.header-outline {
+.heading-outline {
   font-size: 200px; /* Large text for outline */
   color: transparent; /* Transparent fill */
   text-transform: uppercase;
@@ -26,7 +26,7 @@
   opacity: 0.1; /* Reduce transparency */
 }
 
-.header-overlay {
+.heading-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -145,5 +145,18 @@
   .project {
     flex-direction: column; /* Stack content vertically on small screens */
     max-width: 100%; /* Ensure it fits the screen */
+  }
+}
+
+/* Responsive styles for very small screens (phones) */
+@media (max-width: 480px) {
+
+  .heading-overlay {
+    font-size: 2rem !important; /* Reduce heading size for very small screens */
+  }
+
+  .heading-outline {
+    font-size: 6rem !important;
+    -webkit-text-stroke: 1px #dceee9 !important;
   }
 }
