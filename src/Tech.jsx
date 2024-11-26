@@ -4,9 +4,9 @@ function Tech() {
   return (
     <section id="techstack">
       <div className="tech-container">
-        <div class="heading-container">
-          <h1 class="heading-outline">SKILLS</h1>
-          <h2 class="heading-overlay">MY SKILLS</h2>
+        <div class="tech-heading-container">
+          <h1 class="tech-heading-outline">SKILLS</h1>
+          <h2 class="tech-heading-overlay">MY SKILLS</h2>
         </div>
         <div className="tech-box-group">
           <div className="tech-box">

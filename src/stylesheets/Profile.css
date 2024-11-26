@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+
 .main-card {
   background-color: #10221d;
   padding: 20px;
@@ -29,19 +31,18 @@
 }
 
 .profile-card .profile-title {
-  font-family: fantasy;
+  font-family: 'Bowlby One', sans-serif;
   font-size: 100px;
   margin: 0;
   color: #dceee9;
 }
 
 .my-location {
-  font-family: fantasy;
+  font-family: 'Bowlby One', sans-serif;
   font-size: 30px;
   color: #dceee9;
 }
 .profile-card p {
-  font-family: fantasy;
   font-size: 24px;
   margin: 0;
   color: #dceee9;

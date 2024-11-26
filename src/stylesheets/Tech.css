@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+
 #techstack {
   background-color: #10221d;
 }
@@ -13,33 +15,33 @@
   padding-top: 50px;
 }
 
-.heading-container {
+.tech-heading-container {
   position: relative; /* Allows the overlay text to be positioned relative to the outline */
   text-align: center; /* Centers the text horizontally */
 }
 
-.heading-outline {
-  font-size: 200px; /* Large font size for the outline text */
+.tech-heading-outline {
+  font-size: 10rem; /* Large font size for the outline text */
   color: transparent; /* Light grey color */
   text-transform: uppercase; /* Makes the text uppercase */
   letter-spacing: 5px; /* Adds spacing between letters */
   font-weight: bold; /* Makes the text bold */
   -webkit-text-stroke: 2px #dceee9; /* Applies the outline */
-  font-family: fantasy;
+  font-family: 'Bowlby One', sans-serif;
   opacity: 10%;
 }
 
-.heading-overlay {
+.tech-heading-overlay {
   position: absolute; /* Overlay text on top of the outline */
   top: 50%; /* Center the text vertically */
   left: 50%; /* Center the text horizontally */
   transform: translate(-50%, -50%); /* Adjusts to be perfectly centered */
-  font-size: 75px; /* Smaller font size for the overlay text */
+  font-size: 4rem; /* Smaller font size for the overlay text */
   color: #52ac94; /* Gold color for the overlay text */
   font-weight: bold; /* Makes the text bold */
   text-transform: uppercase; /* Makes the text uppercase */
   letter-spacing: 2px; /* Adds spacing between letters */
-  font-family: fantasy;
+  font-family: 'Bowlby One', sans-serif;
   text-wrap: nowrap;
 }
 
@@ -79,12 +81,12 @@
     gap: 15px; /* Reduce spacing between items */
   }
 
-  .heading-outline {
+  .tech-heading-outline {
     font-size: 10rem; /* Reduce heading size */
     -webkit-text-stroke: 1.5px #dceee9;
   }
 
-  .heading-overlay {
+  .tech-heading-overlay {
     font-size: 4rem; /* Reduce overlay size */
   }
 
@@ -97,12 +99,12 @@
 /* Responsive styles for very small screens (phones) */
 @media (max-width: 480px) {
 
-  .heading-overlay {
-    font-size: 3rem; /* Reduce heading size for very small screens */
+  .tech-heading-overlay {
+    font-size: 2rem; /* Reduce heading size for very small screens */
   }
 
-  .heading-outline {
-    font-size: 7rem;
+  .tech-heading-outline {
+    font-size: 5rem;
     -webkit-text-stroke: 1px #dceee9;
   }
   .tech-box-group {

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+
 .project-page {
   background-color: #10221d !important; /* Ensure consistent background color */
   /* padding-top: 50px; */
@@ -10,33 +12,33 @@
   width: 100%; /* Spans the full card width */
 }
 
-.heading-container {
+.project-heading-container {
   position: relative; /* For text overlay positioning */
   text-align: center; /* Centers the text */
 }
 
-.heading-outline {
-  font-size: 200px; /* Large text for outline */
+.project-heading-outline {
+  font-size: 10rem; /* Large text for outline */
   color: transparent; /* Transparent fill */
   text-transform: uppercase;
   letter-spacing: 5px; /* Space between letters */
   font-weight: bold;
   -webkit-text-stroke: 2px #dceee9; /* Outline color */
-  font-family: fantasy;
+  font-family: 'Bowlby One', sans-serif;
   opacity: 0.1; /* Reduce transparency */
 }
 
-.heading-overlay {
+.project-heading-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 75px;
+  font-size: 4rem;
   color: #52ac94;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-family: fantasy;
+  font-family: 'Bowlby One', sans-serif;
   white-space: nowrap; /* Prevents wrapping */
 }
 
@@ -105,7 +107,8 @@
 }
 
 .card-body h3 {
-  font-family: fantasy;
+  font-family: "DM Serif Text", serif;
+  letter-spacing: 0.1rem;
   text-align: center;
   color: white; /* Title color */
 }
@@ -134,29 +137,25 @@
 
 /* Responsive Fixes */
 @media (max-width: 768px) {
-  .skills-outline {
-    font-size: 150px; /* Reduce size for smaller screens */
+  .project-heading-outline {
+    font-size: 5.5rem; /* Reduce size for smaller screens */
   }
 
-  .skills-overlay {
-    font-size: 50px; /* Reduce overlay size for smaller screens */
+  .project-heading-overlay {
+    font-size: 2.5rem; /* Reduce overlay size for smaller screens */
   }
 
-  .project {
-    flex-direction: column; /* Stack content vertically on small screens */
-    max-width: 100%; /* Ensure it fits the screen */
-  }
 }
 
 /* Responsive styles for very small screens (phones) */
 @media (max-width: 480px) {
 
-  .heading-overlay {
-    font-size: 2rem !important; /* Reduce heading size for very small screens */
+  .project-heading-overlay {
+    font-size: 1.5rem ; /* Reduce heading size for very small screens */
   }
 
-  .heading-outline {
-    font-size: 6rem !important;
-    -webkit-text-stroke: 1px #dceee9 !important;
+  .project-heading-outline {
+    font-size: 3.5rem ;
+    -webkit-text-stroke: 1px #dceee9 ;
   }
 }

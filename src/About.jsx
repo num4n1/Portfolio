@@ -12,9 +12,9 @@ function Header() {
   return (
     <section id="about">
       <div className="about-page">
-        <div class="heading-container">
-          <h1 class="heading-outline">ABOUT</h1>
-          <h2 class="heading-overlay">About me</h2>
+        <div class="about-heading-container">
+          <h1 class="about-heading-outline">ABOUT</h1>
+          <h2 class="about-heading-overlay">About me</h2>
         </div>
         <div className="about-container">
           <div className="about-left">
