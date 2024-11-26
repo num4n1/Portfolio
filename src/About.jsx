@@ -1,4 +1,4 @@
-import Doodle from "./assets/Doodle-2.png";
+import Doodle from "./assets/Doodle-green.png";
 import React, { useState } from "react";
 import "./stylesheets/About.css";
 

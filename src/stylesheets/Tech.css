@@ -2,7 +2,6 @@
 
 #techstack {
   background-color: #10221d;
-  padding-top: 50px;
   padding-bottom: 50px;
 }
 .tech-container {
@@ -100,6 +99,10 @@
 
 /* Responsive styles for very small screens (phones) */
 @media (max-width: 480px) {
+  #techstack {
+    background-color: #10221d;
+    padding-bottom: 0px;
+  }
 
   .tech-heading-overlay {
     font-size: 2rem; /* Reduce heading size for very small screens */
