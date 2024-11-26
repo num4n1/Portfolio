@@ -6,6 +6,7 @@
   background-color: #10221d;
   height: 100vh;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 .about-heading-container {
   position: relative; /* For text overlay positioning */
@@ -101,7 +102,7 @@
   }
 
   .about-heading-outline {
-    font-size: 5rem;
+    font-size: 4.5rem;
     -webkit-text-stroke: 1px #dceee9;
   }
 

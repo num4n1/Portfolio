@@ -2,6 +2,7 @@
 
 #techstack {
   background-color: #10221d;
+  padding-bottom: 50px;
 }
 .tech-container {
   background-color: #10221d;
@@ -104,7 +105,7 @@
   }
 
   .tech-heading-outline {
-    font-size: 5rem;
+    font-size: 4.5rem;
     -webkit-text-stroke: 1px #dceee9;
   }
   .tech-box-group {

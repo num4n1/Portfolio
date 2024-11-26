@@ -23,8 +23,8 @@ function Project() {
       <div className="project-page">
         <div class="album py-5 custom-bg-green">
           <div class="project-heading-container">
-            <h1 class="project-heading-outline">PROJECTS</h1>
-            <h2 class="project-heading-overlay">MY PROJECTS</h2>
+            <h1 class="project-heading-outline">WORK</h1>
+            <h2 class="project-heading-overlay">MY WORK</h2>
           </div>
           <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">

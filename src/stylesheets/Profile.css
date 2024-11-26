@@ -84,35 +84,38 @@
 }
 
 @media (max-width: 480px) {
-  #profile {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: #10221d;
-  }
   .main-card {
-    padding: 10px;
-    height: auto;
+    height: 100vh; /* Ensure the container takes the full viewport height */
+    display: flex; /* Flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    margin: 0; /* Remove any potential margin */
+    padding: 0; /* Remove padding to avoid shifting */
+    box-sizing: border-box; /* Ensure padding doesn’t affect height */
   }
 
   .profile-card {
-    gap: 10px; /* Further reduce spacing */
+    gap: 10px; /* Further reduce spacing for a compact look */
+    margin: 0; /* Ensure no extra margin */
+    padding: 0; /* Ensure no extra padding */
   }
 
   .profile-card .profile-image {
-    width: 200px; /* Reduce image size further for smaller screens */
+    width: 200px; /* Maintain a proportionate image size */
     height: 200px; /* Maintain aspect ratio */
   }
 
   .profile-card .profile-title {
-    font-size: 3rem; /* Scale down font size for the title */
+    font-size: 3rem; /* Adjust the title size */
   }
 
   .my-location {
-    font-size: 1.2rem; /* Further reduce font size for the location */
+    font-size: 1.2rem; /* Adjust the location size */
   }
 
-  .profile-card p {
-    font-size: 1rem; /* Adjust font size for smaller devices */
-    width: 90%; /* Allow text to fill most of the width */
+  #root {
+    height: 100%; /* Ensure the root container matches the height of the viewport */
   }
 }
+

@@ -1,4 +1,4 @@
-import profilePicture from "./assets/profilePicture.jpg";
+import profilePicture from "./assets/profilePicture1.jpg";
 import TechStack from "./TechStack.jsx";
 import "./stylesheets/Profile.css";
 import "bootstrap/dist/css/bootstrap.min.css";
