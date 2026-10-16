@@ -11,7 +11,7 @@ export const profile = {
 export const projects = [
   {
     name: "TradersFort",
-    tag: "trading platform",
+    tag: "trading education",
     link: "https://tradersfort.io",
     linkLabel: "tradersfort.io",
     desc: "A platform to help you get started on your trading journey. Launching Jan 1st 2027. Sign up to not miss the launch.",
